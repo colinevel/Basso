@@ -1,9 +1,14 @@
+@font-face {
+  font-family: "Arial Rounded MT Bold";
+  src: url("../public/arlrdbd.ttf");
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Arial Rounded MT Bold";
+  width: 100%;
+  height: 100%;
+  color: black;
 }
 
 a {
@@ -13,4 +18,15 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+#__next {
+  height: 100%;
+  width: 100%
 }
