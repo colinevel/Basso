@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { TopBar } from "../components/TopBar";
 import styles from "../styles/Bijoux.module.css";
 import Image from "next/image";
@@ -7,6 +8,10 @@ export default function Bijoux() {
   return (
     <>
       <div className={styles.container}>
+        <Head>
+          <title>Bijoux</title>
+          <link rel='icon' href='/images/logo-basso.png' />
+        </Head>
         <TopBar />
         <ul className={styles.list}>
           <li>

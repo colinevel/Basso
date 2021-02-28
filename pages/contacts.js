@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styles from "../styles/Contacts.module.css";
 import { NavBar } from "../components/NavBar";
 import Image from "next/image";
@@ -7,6 +8,10 @@ export default function Contacts() {
   return (
     <>
       <div className={styles.container}>
+        <Head>
+          <title>A propos</title>
+          <link rel='icon' href='/images/logo-basso.png' />
+        </Head>
         <div className={styles.topBar}>
           <Link href='/'>
             <Image
@@ -38,13 +43,17 @@ export default function Contacts() {
           </p>
           <p>Augustin Basso</p>
           <div className={styles.contacts}>
-              <a href='mailto:augustin.basso@gmail.com'>
-                augustin.basso@gmail.com
-              </a>
-              <a className={styles.insta} href="https://www.instagram.com/basso_bijou/" target="_blank">
-                <img alt='instagram' src='/images/instagram.svg' />
-                <p>@basso_bijou</p>
-              </a>
+            <a href='mailto:augustin.basso@gmail.com'>
+              augustin.basso@gmail.com
+            </a>
+            <a
+              className={styles.insta}
+              href='https://www.instagram.com/basso_bijou/'
+              target='_blank'
+            >
+              <img alt='instagram' src='/images/instagram.svg' />
+              <p>@basso_bijou</p>
+            </a>
           </div>
         </div>
       </div>
