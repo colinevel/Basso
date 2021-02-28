@@ -1,0 +1,14 @@
+.topBar {
+    padding: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+.topBar div {
+    margin-right: auto !important;
+}
+
+.image:hover {
+  cursor: pointer;
+}

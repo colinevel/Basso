@@ -25,7 +25,7 @@ export default function Contacts() {
             et fabrication au sein d'un atelier parisien, j'imagine,
             conceptionne et fabrique mes bijoux dans mon atelier à Paris.
             <br />
-            Chaque bijou est réalisé sur commande, à la main
+            Chaque bijou est réalisé sur commande, à la main.
           </p>
           <p>
             Je sous-traite certaines étapes de la fabrication, comme la dorure
@@ -34,7 +34,7 @@ export default function Contacts() {
           </p>
           <p>
             Je réponds régulièrement à des demandes personnelles et commandes
-            spéciales. N'hésitez pas à me contacter pour en discuter
+            spéciales. N'hésitez pas à me contacter pour en discuter.
           </p>
           <p>Augustin Basso</p>
           <div className={styles.contacts}>
