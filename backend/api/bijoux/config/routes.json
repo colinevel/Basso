@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bijouxes",
+      "handler": "bijoux.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bijouxes/count",
+      "handler": "bijoux.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bijouxes/:id",
+      "handler": "bijoux.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bijouxes",
+      "handler": "bijoux.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bijouxes/:id",
+      "handler": "bijoux.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bijouxes/:id",
+      "handler": "bijoux.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
