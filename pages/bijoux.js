@@ -41,7 +41,7 @@ function Bijoux({ bijoux }) {
 
 export async function getStaticProps() {
   const [bijoux] = await Promise.all([fetchAPI("/bijouxes")]);
-
+  console.log('yolo', bijoux);
   return {
     props: {
       bijoux,
