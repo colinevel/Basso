@@ -5,6 +5,7 @@ import { fetchAPI } from "../api/api";
 import Link from "next/link";
 
 function Bijoux({ bijoux }) {
+  console.log('yoloo');
   return (
     <>
       <div className={styles.container}>
