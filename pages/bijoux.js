@@ -23,12 +23,12 @@ function Bijoux({ bijoux }) {
               >
                 <li>
                   <h2>{bijou.title}</h2>
-                  <div className={styles.imageContainer}>
+                  {/* <div className={styles.imageContainer}>
                     <img
-                      alt={`${bijou.image1[0].alternativeText}`}
-                      src={`http://localhost:1337${bijou.image1[0].url}`}
+                      alt={`${bijou.mainImage.alternativeText}`}
+                      src={`http://localhost:1337${bijou.mainImage.url}`}
                     />
-                  </div>
+                  </div> */}
                 </li>
               </Link>
             );

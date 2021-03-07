@@ -21,6 +21,7 @@ function Bijou({ bijou }) {
                   src={`http://localhost:1337${image.url}`}
                 />
               </div>
+              { image.caption && <p>{image.caption}</p>}
             </li>
           );
         })}
