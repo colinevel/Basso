@@ -16,21 +16,11 @@ function Bijoux({ bijoux }) {
         <ul className={styles.list}>
           {bijoux.map((bijou, index) => {
             return (
-              <Link
-                as={`/bijoux/${bijou.id}`}
-                href={`/bijoux/[${bijou.id}]`}
-                key={index}
-              >
-                <li>
-                  <h2>{bijou.title}</h2>
-                  {/* <div className={styles.imageContainer}>
-                    <img
-                      alt={`${bijou.mainImage.alternativeText}`}
-                      src={`http://localhost:1337${bijou.mainImage.url}`}
-                    />
-                  </div> */}
-                </li>
-              </Link>
+              <li key={index}>
+                <Link as={`/bijoux/${bijou.id}`} href={`/bijoux/[${bijou.id}]`}>
+                  <a>{bijou.title}</a>
+                </Link>
+              </li>
             );
           })}
         </ul>

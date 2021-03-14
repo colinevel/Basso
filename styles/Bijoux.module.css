@@ -14,8 +14,13 @@
     grid-gap: 2em;
 }
 
-.list li div h2 {
-    text-align: center;
+.list li {
+    display: flex;
+    justify-content: center;
+}
+
+.list li a:hover {
+    text-decoration: underline;
 }
 
 .imageContainer {
