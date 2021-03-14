@@ -10,17 +10,21 @@ function Bijou({ bijou }) {
     <div className={styles.container}>
       <TopBar />
       <h2>{bijou.title}</h2>
+      {/* <img
+        alt='test'
+        src={`https://basso-bijoux-backend.herokuapp.com${imagesArray[0].url}`}
+      /> */}
       <div className={styles.imagesList}>
         {imagesArray.map((image, index) => {
           return (
             <li key={index}>
               <div className={styles.imageContainer}>
-                {/* <img
+                <img
                   alt={`${image.alternativeText}`}
-                  src={`http://localhost:1337${image.url}`}
-                /> */}
+                  src={`https://basso-bijoux-backend.herokuapp.com${image.url}`}
+                />
               </div>
-              { image.caption && <p>{image.caption}</p>}
+              {image.caption && <p>{image.caption}</p>}
             </li>
           );
         })}
