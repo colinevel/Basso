@@ -8,6 +8,15 @@
 }
 
 .list {
+    margin: 2rem 2rem auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* 
+.list {
     margin: 2em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -32,4 +41,4 @@
 .imageContainer img {
     max-width: 100%;
     max-height: 100%;
-}
+} */
