@@ -1,6 +1,13 @@
+.container {
+    position: fixed;
+    margin: 2rem;
+    right: 0;
+    top: 0;
+    width: 30%;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 50%;
 }

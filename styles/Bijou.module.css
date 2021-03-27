@@ -6,27 +6,40 @@
     width: 100%;
     min-height: 100%;
     height: auto;
+    padding: 1em;
+}
+
+.title {
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    font-size: 1.6em;
 }
 
 .description {
     display: block;
-    margin: auto 2em;
 }
 
 .description li {
     list-style-type: disc;
 }
 
+.content {
+    margin-left: 5em;
+}
+
 .imagesList {
-    margin: 2em;
+    margin: 2em 1em 2em 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
+    grid-gap: 2.5em;
+    align-items: center;
 }
 
 .imageContainer {
     display: block;
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
