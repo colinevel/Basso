@@ -10,10 +10,10 @@ export const TopBar = () => {
         <Link href='/'>
           <div>
             <Image
-              src='/images/logo-basso.png'
+              src='/images/logo-basso-transparent.png'
               alt='logo'
-              width={50}
-              height={50}
+              width={80}
+              height={80}
               className={styles.image}
             />
           </div>

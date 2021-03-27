@@ -12,7 +12,7 @@ export const NavBar = () => {
         </li>
         <li>
           <Link href='/contacts'>
-            <a>à propos/contacts</a>
+            <a>à propos</a>
           </Link>
         </li>
         <li>
