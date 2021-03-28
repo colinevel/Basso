@@ -24,14 +24,14 @@ function Bijoux({ bijoux }) {
                     className={styles.bijouList}
                     src={bijou.mainImage.url}
                     alt='logo'
-                    width={220}
-                    height={220}
+                    width={250}
+                    height={250}
                   />
                   <Link
                     as={`/bijoux/${bijou.id}`}
                     href={`/bijoux/[${bijou.id}]`}
                   >
-                    <div className={styles.ImgOverlay}>Plus d'infos</div>
+                    <div className={styles.ImgOverlay}>Plus d'infos sur {bijou.title}</div>
                   </Link>
                 </>
               </div>
