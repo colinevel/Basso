@@ -3,6 +3,11 @@
   src: url("../public/arlrdbd.ttf");
 }
 
+@font-face {
+  font-family: "Big Caslon Medium";
+  src: url("../public/BigCaslonMedium.ttf");
+}
+
 html,
 body {
   font-family: "Arial Rounded MT Bold";
