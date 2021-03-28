@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 function Bijoux({ bijoux }) {
-  console.log('bijoux props', bijoux);
+  console.log("bijoux props", bijoux);
   return (
     <>
       <div className={styles.container}>
@@ -18,14 +18,23 @@ function Bijoux({ bijoux }) {
         <ul className={styles.list}>
           {bijoux.map((bijou) => {
             return bijou.mainImage ? (
-              <Image
-                key={bijou.id} 
-                className={styles.bijouList}
-                src={bijou.mainImage.url}
-                alt='logo'
-                width={200}
-                height={200}
-              />
+              <div key={bijou.id} className={styles.ImgContainer}>
+                <>
+                  <Image
+                    className={styles.bijouList}
+                    src={bijou.mainImage.url}
+                    alt='logo'
+                    width={220}
+                    height={220}
+                  />
+                  <Link
+                    as={`/bijoux/${bijou.id}`}
+                    href={`/bijoux/[${bijou.id}]`}
+                  >
+                    <div className={styles.ImgOverlay}>Plus d'infos</div>
+                  </Link>
+                </>
+              </div>
             ) : null;
           })}
         </ul>
@@ -34,15 +43,9 @@ function Bijoux({ bijoux }) {
   );
 }
 
-              /* <li key={index}>
-                <Link as={`/bijoux/${bijou.id}`} href={`/bijoux/[${bijou.id}]`}>
-                  <a>{bijou.title}</a>
-                </Link>
-              </li> */
-
 export async function getStaticProps() {
   const [bijoux] = await Promise.all([fetchAPI("/bijouxes")]);
-  console.log('bijoux', bijoux);
+  console.log("bijoux", bijoux);
   return {
     props: {
       bijoux,
