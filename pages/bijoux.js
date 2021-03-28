@@ -17,7 +17,7 @@ function Bijoux({ bijoux }) {
         <TopBar />
         <ul className={styles.list}>
           {bijoux.map((bijou) => {
-            return bijou.mainImage ? (
+            return (
               <div key={bijou.id} className={styles.ImgContainer}>
                 <>
                   <Image
@@ -35,7 +35,7 @@ function Bijoux({ bijoux }) {
                   </Link>
                 </>
               </div>
-            ) : null;
+            )
           })}
         </ul>
       </div>
