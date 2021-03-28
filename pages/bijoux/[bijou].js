@@ -11,10 +11,6 @@ function Bijou({ bijou }) {
     <div className={styles.container}>
       <TopBar />
       <h2 className={styles.title}>{bijou.title}</h2>
-      {/* <img
-        alt='test'
-        src={`https://basso-bijoux-backend.herokuapp.com${imagesArray[0].url}`}
-      /> */}
       <div className={styles.content}>
         <div className={styles.imagesList}>
           {imagesArray.map((image, index) => {
@@ -22,15 +18,9 @@ function Bijou({ bijou }) {
               <li key={index}>
                 <div className={styles.imageContainer}>
                   <img
-                    alt={`${image.alternativeText}`}
-                    src={`https://basso-bijoux-backend.herokuapp.com${image.url}`}
+                    alt={image.alternativeText}
+                    src={image.url}
                   />
-                  {/* <Image
-                    alt={`${image.alternativeText}`}
-                    height={600}
-                    width={400}
-                    src={`https://basso-bijoux-backend.herokuapp.com${image.url}`}
-                  /> */}
                 </div>
                 {image.caption && <p>{image.caption}</p>}
               </li>

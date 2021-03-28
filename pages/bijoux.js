@@ -6,7 +6,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 function Bijoux({ bijoux }) {
-  console.log("bijoux props", bijoux);
   return (
     <>
       <div className={styles.container}>
@@ -27,15 +26,16 @@ function Bijoux({ bijoux }) {
                     width={250}
                     height={250}
                   />
-                  <Link
-                    as={`/bijoux/${bijou.id}`}
-                    href={`/bijoux/[${bijou.id}]`}
-                  >
-                    <div className={styles.ImgOverlay}>Plus d'infos sur {bijou.title}</div>
+                  <Link as={`/bijoux/${bijou.id}`} href={`/bijoux/[bijou]`}>
+                    <a>
+                      <div className={styles.ImgOverlay}>
+                        Plus d'infos sur {bijou.title}
+                      </div>
+                    </a>
                   </Link>
                 </>
               </div>
-            )
+            );
           })}
         </ul>
       </div>
@@ -45,7 +45,6 @@ function Bijoux({ bijoux }) {
 
 export async function getStaticProps() {
   const [bijoux] = await Promise.all([fetchAPI("/bijouxes")]);
-  console.log("bijoux", bijoux);
   return {
     props: {
       bijoux,
