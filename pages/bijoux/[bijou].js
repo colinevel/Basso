@@ -19,7 +19,7 @@ function Bijou({ bijou }) {
             return (
               <li key={index}>
                 <div className={styles.imageContainer}>
-                  <img alt={image.alternativeText} src={image.url} />
+                  <img alt={image.alternativeText || bijou.title} src={image.url} />
                 </div>
                 {image.caption && <p>{image.caption}</p>}
                 {/* <Image

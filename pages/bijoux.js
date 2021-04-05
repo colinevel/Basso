@@ -22,7 +22,7 @@ function Bijoux({ bijoux }) {
                   <Image
                     className={styles.bijouList}
                     src={bijou.mainImage.url}
-                    alt='logo'
+                    alt={bijou.mainImage.alternativeText || bijou.title}
                     width={250}
                     height={250}
                   />
