@@ -56,8 +56,8 @@ export default function Contacts() {
               className={styles.portrait}
               src='/images/Portrait-Augustin-Basso.jpg'
               alt='Augustin Bassp'
-              width={400}
-              height={600}
+              width={300}
+              height={500}
             />
           </div>
         </div>

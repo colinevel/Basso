@@ -1,11 +1,11 @@
 .container {
-    background-image: url("../public/background/contacts.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 100%;
-  }
+  background-image: url("../public/background/contacts.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100%;
+}
 
 .content {
   display: flex;
@@ -35,6 +35,10 @@
   font-size: 14px;
 }
 
+.mainText :nth-child(4) {
+  margin-bottom: 25px;
+}
+
 .contacts {
   display: flex;
   flex-direction: row;
@@ -48,3 +52,19 @@
   align-items: center;
 }
 
+@media (max-width: 640px) {
+  .content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainText {
+    max-width: 80%;
+  }
+ 
+  .contacts {
+    font-size: 12px;
+  }
+
+}
