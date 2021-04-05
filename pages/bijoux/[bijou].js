@@ -11,7 +11,7 @@ function Bijou({ bijou }) {
     <div className={styles.container}>
       <TopBar />
       <div className={styles.titleContainer}>
-          <h2 className={styles.title}>{bijou.title}</h2>
+        <h2 className={styles.title}>{bijou.title}</h2>
       </div>
       <div className={styles.content}>
         <div className={styles.imagesList}>
@@ -22,6 +22,13 @@ function Bijou({ bijou }) {
                   <img alt={image.alternativeText} src={image.url} />
                 </div>
                 {image.caption && <p>{image.caption}</p>}
+                {/* <Image
+                  className={styles.portrait}
+                  src={image.url}
+                  alt='Augustin Bassp'
+                  width={150}
+                  height={300}
+                /> */}
               </li>
             );
           })}

@@ -52,3 +52,13 @@
     width: 100%;
     height: auto;
 }
+
+@media (max-width: 640px) {
+    .imagesList {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagesList li {
+        max-width: 80%;
+    }
+}

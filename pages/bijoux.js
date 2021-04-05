@@ -26,7 +26,7 @@ function Bijoux({ bijoux }) {
                     width={250}
                     height={250}
                   />
-                  <Link as={`/bijoux/${bijou.id}`} href={`/bijoux/[bijou]`}>
+                  <Link as={`/bijoux/${bijou.id}`} href={`/bijoux/${bijou.id}`}>
                     <a>
                       <div className={styles.ImgOverlay}>
                         Plus d'infos sur {bijou.title}
