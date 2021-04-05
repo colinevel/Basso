@@ -58,3 +58,14 @@
   height: auto;
   margin-bottom: .5rem;
 }
+
+
+@media (max-width: 640px) {
+  .brand_title {
+    margin-right: 2rem;
+  }
+
+  .contacts :nth-child(2) {
+    font-size: 12px;
+  }
+}
