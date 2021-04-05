@@ -10,17 +10,16 @@ function Bijou({ bijou }) {
   return (
     <div className={styles.container}>
       <TopBar />
-      <h2 className={styles.title}>{bijou.title}</h2>
+      <div className={styles.titleContainer}>
+          <h2 className={styles.title}>{bijou.title}</h2>
+      </div>
       <div className={styles.content}>
         <div className={styles.imagesList}>
           {imagesArray.map((image, index) => {
             return (
               <li key={index}>
                 <div className={styles.imageContainer}>
-                  <img
-                    alt={image.alternativeText}
-                    src={image.url}
-                  />
+                  <img alt={image.alternativeText} src={image.url} />
                 </div>
                 {image.caption && <p>{image.caption}</p>}
               </li>
